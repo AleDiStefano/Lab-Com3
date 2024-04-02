@@ -1,6 +1,8 @@
 import './App.css'
 import BeersItem from './components/beersItem/BeersItem';
 import AvaibleBeers from './components/avaibleBeers/AvaibleBeers';
+import CounterBeerStyle from './components/counterBeerStyle/CounterBeerStyle';
+import BeerStyle from './components/beersStyle/BeerStyle';
 
 const beers = [
   {
@@ -85,21 +87,18 @@ function App() {
        
         </div>
       ))} */}
-      {beers.map((beer, index) => ( 
-        <div key={index}> 
+      {/* {beers.map((beer, index) => (
           <AvaibleBeers
-            id={beer.id}
+            key={index}
             beerName={beer.beerName}
-            beerStyle={beer.beerStyle}
-            price={beer.price}
             available={beer.available}
           />
-        </div>
-      ))}
+      ))} */}
+        {/* <CounterBeerStyle beer={beers}/> */}
+        <BeerStyle beer={beers}/>
+
     </div>
   );
 }
 export default App
 
-
-// key={beer.id} 
