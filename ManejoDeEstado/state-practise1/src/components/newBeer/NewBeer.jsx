@@ -21,10 +21,7 @@ const NewBeer = ({addNewBeer}) => {
     )
 
     const newBeerAdd = () => {
-        // console.log(newBeerName)
-        // console.log(newBeerStyle)
-        // console.log(newBeerPrice)
-           const beerSended = {
+        const beerSended = {
             id: counter,
             beerName: newBeerName,
             beerStyle: newBeerStyle,
