@@ -31,6 +31,7 @@ const Login = ({ handleUsers }) => {
         <>
             <form onSubmit={onSubmit123}>
                 <input type="text" value={newUserName} onChange={characterValidator} />
+                <p>se esta ingresando: {newUserName}</p>
                 <button onClick={onhandleUsers}>Agregar</button>
             </form>
 
